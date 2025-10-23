@@ -8,7 +8,7 @@ import {
   Tooltip, Legend, ResponsiveContainer
 } from 'recharts';
 
-const API_URL = 'http://localhost:8000';
+const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
 const PREDEFINED_FUNCTIONS = [
   'Seno',
@@ -119,7 +119,7 @@ export default function Home() {
       console.error('Error:', error);
       setError(
         error.response?.data?.detail ||
-        'Error al conectar con la API. Asegúrate de que esté corriendo en http://localhost:8000'
+        `Error al conectar con la API. Asegúrate de que esté corriendo en ${API_URL}.`
       );
     } finally {
       setIsLoading(false);

@@ -97,7 +97,7 @@ export default function RootLayout({
 import { useState } from 'react';
 import axios from 'axios';
 
-const API_URL = 'http://localhost:8000';
+const API_URL = process.env.NEXT_API_URL;
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
