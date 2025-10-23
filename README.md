@@ -13,6 +13,33 @@ Las dependencias están instaladas. Necesitas crear los archivos de configuraci�
 - ✅ Axios 1.7.2 (para API calls)
 - ✅ Tailwind CSS 3.4.4
 
+## 📁 Estructura del Proyecto
+
+```
+client/
+├── app/                        # Directorio de la aplicación Next.js 14
+│   ├── layout.tsx              # Layout principal
+│   ├── page.tsx                # Página principal
+│   └── globals.css             # Estilos globales con Tailwind
+├── components/                 # Componentes React reutilizables
+│   └── charts/                 # Componentes de gráficos
+├── lib/                        # Utilidades y helpers
+├── types/                      # Definiciones de TypeScript
+├── public/                     # Archivos estáticos
+├── .github/                    # Configuración de GitHub
+├── .env                        # Variables de entorno (desarrollo)
+├── .env.production             # Variables de entorno (producción)
+├── .gitignore                  # Archivos excluidos de Git
+├── next.config.js              # Configuración de Next.js
+├── tailwind.config.js          # Configuración de Tailwind CSS
+├── postcss.config.js           # Configuración de PostCSS
+├── tsconfig.json               # Configuración de TypeScript
+├── package.json                # Dependencias del proyecto
+├── package-lock.json           # Lock de dependencias
+├── next-env.d.ts               # Tipos de Next.js
+└── README.md                   # Documentación del proyecto
+```
+
 ## 🔧 Archivos que Necesitas Crear
 
 ### 1. Configuración de Tailwind
